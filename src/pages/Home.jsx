@@ -19,7 +19,7 @@ const Home = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          "https://open-ai-g8rf.onrender.com/api/v1/post"
+          "https://open-ai-we4b.onrender.com/api/v1/post"
         );
         if (response) {
           SetAllPosts(response?.data);

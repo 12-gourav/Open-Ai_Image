@@ -22,7 +22,7 @@ const CreatePost = () => {
       setGeneratingImg(true);
       try {
         const response = await axios.post(
-          "https://open-ai-g8rf.onrender.com/api/v1/dalle",
+          "https://open-ai-we4b.onrender.com/api/v1/dalle",
           { prompt: form.prompt }
         );
         const data = response;
@@ -48,7 +48,7 @@ const CreatePost = () => {
       setLoading(true);
       try {
         const response = await axios.post(
-          "https://open-ai-g8rf.onrender.com/api/v1/post",
+          "https://open-ai-we4b.onrender.com/api/v1/post",
           {
             name: form.name,
             prompt: form.prompt,
