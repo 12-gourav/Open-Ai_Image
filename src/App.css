@@ -1,0 +1,253 @@
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    /* border: 0.5px solid #e6ebf4; */
+}
+.nav .logo{
+width: 5rem;
+    object-fit: contain;
+}
+.nav .create{
+    font-weight: bolder;
+    background-color: #6469ff;
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.main{
+    width: 100%;
+    padding: 2rem 4rem;
+    background-color: #f9fafe;
+    min-height: calc(100vh - 73px);
+}
+.home{
+    width: 100%;
+
+}
+.home h1,.creates h1{
+    font-weight: bold;
+    color: #222328;
+    font-size: 28px;
+}
+.home p,.creates p{
+    margin-top: 1rem;
+    color: #666e75;
+    font-size: 16px;
+}
+.home .f{
+    margin-top: 16px;
+}
+.home .g{
+    margin-top: 10px;
+}
+.home .h{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .grid{
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+    padding: 1em;
+    grid-gap: 2.0em;
+}
+.creates{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    padding-left: 3rem;
+}
+.creates form{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.creates form .form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 0.8rem 0;
+}
+.creates form .form-group label{
+    color: #222328;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.creates form .form-group input{
+    outline: none;
+    border: 1px solid rgb(233, 233, 233);
+    background-color: white;
+    padding: 0.7rem;
+    outline: none;
+    border-radius: 8px;
+}
+.creates form .form-group input:focus{
+    border-color: #6469ff;
+}
+.creates form .relative{
+    background-color: white;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 4px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+.creates .gen{
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+.btns{
+    margin-top: 1rem;
+}
+.gbtn{
+ 
+    background-color:#15803d;
+    padding: 0.6rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.btn2{
+   
+    background-color:#6469ff;
+    padding: 0.6rem 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    box-shadow: var(--shadow);
+}
+
+@media(max-width:700px){
+    .creates{
+        padding-left: 0;
+    }
+    .main{
+        padding: 1rem;
+    }
+    .creates form{
+        width: 100%;
+    }
+    .creates .gbtn{
+        width: 100%;
+    }
+    .btn2{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    p{
+        text-align: justify;
+    }
+    .creates form .relative{
+        width: 200px;
+        height: 200px;
+    }
+    .home .grid{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.card{
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    width:100%;
+    height: auto;
+    position: relative;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card .data{
+    position: absolute;
+    background:rgba(0, 0, 0, 0.5);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+ 
+    padding: 0.4rem 0.5rem;
+    max-height: 94.5%;
+    display: none;
+    transition: 0.3s ease;
+   
+    border-radius: 10px;
+}
+.card:hover .data{
+    display: flex;
+}
+.card .data p{
+    color: white;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+}
+.card .dis{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+.card .dis .avtar{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #15803d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.card .dis .div{
+    display: flex;
+    color: #fff;
+    font-size: 0.8rem;
+    align-items: center;
+}
+.card .download{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.card .download img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.input-bar{
+    width: 100%;
+    padding: 0.8rem 1.3rem;
+    outline: none;
+    background-color: white;
+    border: none;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
